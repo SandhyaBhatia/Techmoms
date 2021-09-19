@@ -118,6 +118,10 @@ a:hover {
   margin-right: 10px;
 }
 
+i {
+  color: #333;
+}
+
 i:hover {
   color: #C7647B;
 }
