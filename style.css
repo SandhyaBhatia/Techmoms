@@ -20,6 +20,7 @@ body {
 .main-container {
   grid-column: 1/2;
   grid-row: 2;
+  height: 70vh;
   background-image: url(assets/tech-moms-working.jpg);
   background-size: cover;
 }
@@ -28,7 +29,7 @@ body {
   grid-column: 2/3;
   grid-row: 2;
   padding: 10px;
-  background-color: #06E0E9;
+  background-color: #06b0b6;
 }
 
 .footer-container {
@@ -51,10 +52,13 @@ body {
 
 nav a {
   font-size: 20px;
-  text-decoration: none;
   color: #333;
   font-weight: bold;
   margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
 }
   
 a:hover {
@@ -115,15 +119,41 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+.icons-flex {
+  display: flex;
+}
   
-.mt-10 {
+.square {
   margin-right: 10px;
 }
 
-i {
+a .square {
   color: #333;
 }
 
-a i:hover {
+a .square:hover {
   color: #C7647B;
+}
+
+/* 
+  The fontawesome instagram square icon doesn't work
+  We can make our own square icon with the help of CSS
+*/
+.insta-box {
+  margin-top: 2px;
+  color: #fff;
+  background-color: #333;
+  width: 43px;
+  height: 43px;
+  border-radius: 3px;
+}
+
+a .insta-box:hover {
+  background-color: #C7647B;
+}
+
+.insta {
+  color: #fff;
+  margin: 5px 0 0 7.5px;
 }
